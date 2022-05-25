@@ -134,4 +134,12 @@ dmypy.json
 *.npy
 *.lst
 *.DS_Store
+*.txt
+*.text
+*.md
+*.rst
+*.labels
+*.pdf 
+*.png
+
 
