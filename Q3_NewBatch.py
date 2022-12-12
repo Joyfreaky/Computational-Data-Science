@@ -7,12 +7,12 @@ def gettagssequence(tagged_file):
 of strings, where each string is the sequence of lower cased tags (after removing the <SEP>
 special character) for one sentence"""
     # Read the content of alice_tags.txt and store it in a list of strings
-    contents = open(tagged_file).read()
-    contents = re.sub(r'([\w]*)\<SEP\>', r"\1", contents, 0, re.MULTILINE)
+    contents = open(tagged_file).read()  # read the file
+    contents = re.sub(r'([\w]*)\<SEP\>', r"\1", contents, 0, re.MULTILINE) # remove <SEP>
     #contents = re.sub(r'\<SEP\>', r"", contents, 0, re.MULTILINE)
-    contents = contents.lower()
+    contents = contents.lower() # lower case
 
-    tags_sequences = contents.split("\n")
+    tags_sequences = contents.split("\n") # split the lines
 
     # Return the list of strings
     return tags_sequences
