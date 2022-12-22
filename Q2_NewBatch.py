@@ -1,16 +1,6 @@
 import numpy as np
 
-""" def matrix_multiplication(*argv):
-     # check the shape of the input matrices
-     if len(argv) == 2:
-         if argv[0].shape[1] == argv[1].shape[0]:
-             return np.matmul(argv[0], argv[1])
-         else:
-             print("The shape of the input matrices is not suitable for matrix multiplication.")
-             return None
-     else:
-         print("The number of input matrices is not suitable for matrix multiplication.")
-         return None """
+
 
 def matrix_multiplication(*argv):
      """Multiplication of two or more matrices."""
@@ -88,8 +78,9 @@ in the subsection above.
      
 
 
-#def LLS(A, b):
-     #pass
+def LLS(A, b):
+     # Find the Moore-Penrose pseudoinverse of a matrix A.
+     A_plus =  matrix_multiplication
 
 # To test your functions above, run the code below and compare your results with the example outputs below.
 # Q2 Test Cases
@@ -101,7 +92,6 @@ if __name__ == '__main__':
                        np.array([[3], [-1], [0.5]]))],
                  'd':[(np.array([[3, -9, -1], [-2, -2, 14], [0.5, -12, 1.5]]),
                        np.array([[3], [-1], [0.5]]),
-                       # 1*3 array
                        np.array([[1, 2, 3]]),)]}
           
     print('\n-- Q2a testcases --')
